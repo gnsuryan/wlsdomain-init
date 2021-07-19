@@ -1,0 +1,5 @@
+    sudo firewall-cmd --zone=public --add-port=7001/tcp
+    sudo firewall-cmd --zone=public --add-port=7501/tcp
+    sudo firewall-cmd --zone=public --add-port=7005/tcp
+    sudo firewall-cmd --runtime-to-permanent
+    sudo systemctl restart firewalld
