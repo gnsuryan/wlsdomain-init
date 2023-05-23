@@ -3,5 +3,6 @@
     sudo firewall-cmd --zone=public --add-port=7005/tcp
     sudo firewall-cmd --zone=public --add-port=7011/tcp #ms1
     sudo firewall-cmd --zone=public --add-port=7012/tcp #ms2
+    sudo firewall-cmd --zone=public --add-port=80/tcp #nginx
     sudo firewall-cmd --runtime-to-permanent
     sudo systemctl restart firewalld
